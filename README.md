@@ -20,3 +20,13 @@ alias ymog="/path/to/ymog/index.js"
 - `--vertical`: render the text vertically instead of horizontally.
 - `--emoji <slack emoji name>`: choose which emoji to build letters out of.
 - `--fallback-emoji <slack emoji name>`: choose which emoji is the whitespace.
+
+### Requirements
+
+- Your slack instance needs a transparent square custom emoji, referred to in the code here as `:transparent-square:`
+
+### Limitations
+
+- only works on one word right now
+  - not really a problem in practice, the output would be way too big for more words
+- currently relies on `pbcopy`, so only supports MacOS (this is easy to fix)
